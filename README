@@ -1,0 +1,13 @@
+To plot area file stuff
+datainput_AREA('sput_dec0617a')
+(or look in this file to edit and make your own files for particular sample
+
+Look in datainput_AREA has some options that are easy to change
+but that I took out of the user file 'sput_dec0617a' so that
+it was 'cleaner' to look at.
+
+
+to plot spec file stuff (p_point, etc, just as line plots, run as
+
+datainput_run('sput_dec0617a')
+

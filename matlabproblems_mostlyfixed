@@ -1,0 +1,59 @@
+Warning: Name is nonexistent or not a directory:
+/home/mocvd/Documents/MATLAB/usr/local/lib/MATLAB/R2016b/toolbox/matlab/codetools 
+Warning: Initializing Java preferences failed in matlabrc.
+This indicates a potentially serious problem in your MATLAB setup, which should
+be resolved as soon as possible.  Error detected was:
+MATLAB:UndefinedFunction
+Undefined function or variable 'initdesktoputils'. 
+> In matlabrc (line 121) 
+>> 
+
+
+To recover for this session of MATLAB, type "restoredefaultpath;matlabrc". 
+To find out how to avoid this warning the next time you start MATLAB, type "docsearch problem path" 
+after recovering for this session.
+
+
+check
+>> which pathdef  (was using /home/mocvd/Documents/MATLAB/pathdef.m (from 2014)
+so I renamed it to pathdef_old.m and ran matlab again - seemed to do OK without error message)
+(note perhaps I should have done a >> savepath after doing the >> restoredefaultpath;matlabrc
+but when trying it, it tries to save to 
+Warning: Unable to save path to file '/usr/local/lib/MATLAB/R2016b/toolbox/local/pathdef.m'. You can
+save your path to a different location by calling SAVEPATH with an input argument that specifies the
+full path. For MATLAB to use that path in future sessions, save the path to 'pathdef.m' in your MATLAB
+startup folder. 
+so I tried 
+>> savepath pathdef.m  (which -put it into the home/mocvd/Documents/MATLAB
+
+
+(from documents of path unsuccessfuly set at Startup
+Path Unsuccessfully Set at StartupWhen there is a problem with the search path, you cannot use MATLAB® successfully.Search path problems occur when:You save the search path on a Windows® platform,
+and then try to use the same pathdef.m file on
+a Linux® platform.The pathdef.m file becomes corrupt,
+invalid, renamed, or deleted.MATLAB cannot locate the pathdef.m file. When MATLAB starts, if there is a problem with the search
+path,  a message such as the following appears:Warning: MATLAB did not appear to successfully set the search 
+path...
+For problems with the search path, try these recovery steps.
+Proceed from one step to the next only as necessary.Ensure MATLAB is using the pathdef.m file
+you expect:Runwhich pathdefIf you want MATLAB to use the pathdef.m file
+at another location, make corrections. For example, delete the incorrect pathdef.m file
+and ensure the correct pathdef.m file is in a location
+that MATLAB can access.Look for and correct problems with the pathdef.m and startup.m files:Open pathdef.m and startup.m in
+a text editor. Depending on the problem, you might not be able to
+open the pathdef.m file.Look for obvious problems, such as invalid characters
+or path names.Make corrections and save the files.Restart MATLAB to ensure that the problem does not
+recur.Try to correct the problem using the Set Path dialog box:Restore the default search path and save it. See Change Folders on the Search Path. Depending
+on the problem, you might not be able to open the dialog box.Restart MATLAB to ensure that the problem does not
+recur.Restore the default search path using functions:Run restoredefaultpath, which sets
+the search path to the default and stores it in matlabroot/toolbox/local.If restoredefaultpath seems to correct
+the problem, run savepath. Restart MATLAB to ensure that the problem does not
+recur.Depending on the problem, a message such as the following could
+appear:The path may be bad. Please save your work (if desired), and quit.Correct the search path problems encountered during startup:Runrestoredefaultpath; matlabrcWait a few minutes until it completes.If there is a pathdef.m file in the
+startup folder, it caused the problem. Either remove the bad pathdef.m file
+or replace it with a good pathdef.m file. For example,
+run:savepath('path_to_your_startup_folder/pathdef.m')See MATLAB Startup Folder.Restart MATLAB to ensure that the problem does not
+recur.After correcting problems with the search path, make any changes
+to run your files. For example, add the userpath folder
+or other folders to the search path.
+

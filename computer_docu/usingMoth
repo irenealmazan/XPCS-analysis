@@ -1,0 +1,53 @@
+Ubuntu Gnome - 
+
+to log in (mocvd) as usual (may need to hit enter a few times to get to 
+	login screen
+
+The desktop is 'clean' nothing on it and it can be a bit hard to figure 
+out at first (how to get anything going!
+
+Mouse - left button is choose, 
+		right button may show options if available in where you are
+		middle scroll wheel can scroll in some places 
+		middle scroll wheel is also 'paste' (say in terminal) 
+
+	Move Mouse to Bottom of screen for a dock to appear to 
+		choose application
+			(sometimes there is a minor delay before it appears)
+		
+	
+	Hit the (WINDOWS) key (left bottom of keyboard)
+		and start typing first letters of command such as
+			matlab
+			terminal
+			thunar (file manager - its icon is thor's hammer)
+			screencapture
+			geany (nicer editor for the matlab files)
+			grsync
+			
+	Hit the (WINDOWS) key also will fly above and show all the windows
+		(kind of like the Mac's  key on top of its keyboard)
+		choose window/application to bring up on top by clicking
+	
+	Hit the (WINDOWS) key and other workspaces show up on right
+		(you can move open applications between windows by clicking
+			and draging while in the 'fly above' mode
+		If you put something in every workspace, another workspace will
+			be added (number of workspaces is dynamic)
+	
+	Hit the (WINDOWS) key and on left hand side menu is a 3x3square
+		which will open up listing of all applications
+		(as will also the applications menu on the bottom dock that
+		you can get to by moving mouse to bottom of screen.
+
+
+p.s. /home/mocvd/DATA/2016/2016_10_mocvd_nitride_XPCS/documentation/
+holds things like the spreadsheet for filter corrections and other things
+that might be useful.
+
+If you have to remount the remote drives  - I find the easiest way is 
+to open a file manager and in the 'location' do
+sftp://det@alps   (it will then ask for password and then it is
+mounted and available for the grsync guis to use
+sftp://mocvd@fly  (for the spec data_
+(I don't have the location of the Pixirad yet)
